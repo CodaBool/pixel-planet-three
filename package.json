@@ -1,0 +1,16 @@
+{
+  "name": "planet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx esbuild index.js --minify --bundle --outfile=out.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.176.0"
+  }
+}
