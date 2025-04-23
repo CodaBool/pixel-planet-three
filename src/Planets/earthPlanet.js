@@ -5,7 +5,7 @@ import { createBasePlanet } from "../Layers/basePlanet.js";
 import { createCloudLayer } from "../Layers/cloudLayer.js";
 import { createlandMassLayer } from "../Layers/landMass.js";
 
-export const createEarthPlanet = ({colors, pixels, seed, land, cloudCover}) => {
+export const createEarthPlanet = ({colors, pixels, seed, land, cloudCover, clouds}) => {
     const earth = new Group();
     if (!colors.base) {
         colors.base = [
@@ -20,10 +20,14 @@ export const createEarthPlanet = ({colors, pixels, seed, land, cloudCover}) => {
     // lightPos = new Vector2(0.39, 0.7), lightIntensity = 0.1, colors = null, rotationSpeed = 0.1, rotation = 0.0, land = 0.6
     const landmass = createlandMassLayer(undefined,undefined,colors,undefined,undefined,land, pixels, seed)
     // colors, lightPos = new Vector2(0.39, 0.7), rotationSpeed = 0.1, rotation = 0.0, cloudCover = 0.546, stretch = 2.5, pixels, seed
-    const cloudsLayer = createCloudLayer(colors, undefined, undefined, undefined, cloudCover, undefined, pixels, seed)
-
+    
     const atmosphere = createAtmosphereLayer(colors, pixels)
+    
+    earth.add(basePlanet,landmass,atmosphere)
+    if (clouds) {
+        const cloudsLayer = createCloudLayer(colors, undefined, undefined, undefined, cloudCover, undefined, pixels, seed)
+        earth.add(cloudsLayer)
+    }
 
-    earth.add(basePlanet,landmass,cloudsLayer,atmosphere)
     return earth
 }

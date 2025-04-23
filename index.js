@@ -46,7 +46,7 @@ function initScene() {
             scheme: p.get("schemeColor") ? p.get("schemeColor") : undefined,
             atmosphere: p.get("atmosphere") ? p.get("atmosphere") : undefined,
         },
-        clouds: p.get("clouds") === "true",
+        clouds: p.get("clouds") ? p.get("clouds") === "true" : true,
         type: p.get('type') || "terrestrial",
         cloudCover: p.get("cloudCover") ? Number(p.get("cloudCover")) : undefined, // terrestrial
         size: p.get("size") ? Number(p.get("size")) : undefined, // 

@@ -143,7 +143,7 @@ const fragmentShader = () => {
     `;
 }
 
-export function createBaseGasPlanet(lightPos = new Vector2(0.39, 0.7), cloudCover = 0.538, colors, stretch = 1.0, rotationSpeed = 0.1, rotation = 0.0, cloudCurve = 1.3, pixels, seed) {
+export function createBaseGasPlanet(lightPos = new Vector2(0.39, 0.7), cloudCover, colors, stretch = 1.0, rotationSpeed = 0.1, rotation = 0.0, cloudCurve, pixels, seed) {
 
     // const planetGeometryGas = new PlaneGeometry(1, 1);
     // const planetMaterialGas = new ShaderMaterial({
@@ -188,7 +188,7 @@ export function createBaseGasPlanet(lightPos = new Vector2(0.39, 0.7), cloudCove
             shadow_outline_color: { value: colorPalette[3] },
             cloud_cover: { value: 0.0 },
             stretch: { value: stretch },
-            cloud_curve: { value: 0.0 },
+            cloud_curve: { value: cloudCurve || 1.3 },
             pixels: {value: pixels || 100.0},
             time_speed: { value: rotationSpeed },
             rotation: { value: rotation },

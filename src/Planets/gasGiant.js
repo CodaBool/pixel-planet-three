@@ -2,7 +2,7 @@ import { Group } from "three";
 import { createBaseGasPlanet } from "../Layers/baseGasPlanet.js";
 import { createGasPLayer } from "../Layers/gasLayer.js";
 
-export const createGasGiant = ({colors, pixels, seed, clouds, lakes}) => {
+export const createGasGiant = ({colors, pixels, seed, clouds, lakes, cloudCover}) => {
     const gasGiantGroup = new Group()
 
 
