@@ -12,7 +12,7 @@ baseColors: 4 comma separated hexes
 featureColors: 4 comma separated hexes
 layerColors: 4 comma separated alpha hexes
 atmosphere: 3 comma separated alpha hexes
-type: [baren, ice, gas, ring, asteroid, star, lava, desert, terrestrial]
+type: [barren, ice, gas, ring, asteroid, star, lava, desert, terrestrial]
 seed: 0 - 100
 
 # star (defaults orange)
@@ -43,7 +43,7 @@ lakes: 0 - 1
 You must specify at the minimum hexes or the planet will not be created
 
 ### Examples
-- [baren](https://codabool.github.io/pixel-planet-three/?type=baren&pixels=800)
+- [barren](https://codabool.github.io/pixel-planet-three/?type=barren&pixels=800)
 - [ice](https://codabool.github.io/pixel-planet-three/?type=ice&pixels=800)
 - [gas](https://codabool.github.io/pixel-planet-three/?type=gas&pixels=800)
 - [ring](https://codabool.github.io/pixel-planet-three/?type=ring&pixels=800)

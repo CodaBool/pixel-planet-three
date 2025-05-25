@@ -30,7 +30,7 @@ export function randomPointOnSphere() {
 
 export function generatePlanetByType(params) {
   switch (params.type) {
-    case "baren":
+    case "barren":
       return createNoAtmospherePlanet(params)
     case "ice":
       return createIcePlanet(params)
