@@ -12,7 +12,7 @@ baseColors: 4 comma separated hexes
 featureColors: 4 comma separated hexes
 layerColors: 4 comma separated alpha hexes
 atmosphere: 3 comma separated alpha hexes
-type: [baren, ice, gas, ring, asteroid, star, lava, dessert, terrestrial]
+type: [baren, ice, gas, ring, asteroid, star, lava, desert, terrestrial]
 seed: 0 - 100
 
 # star (defaults orange)
@@ -43,8 +43,17 @@ lakes: 0 - 1
 You must specify at the minimum hexes or the planet will not be created
 
 ### Examples
-- [ring planet](https://codabool.github.io/pixel-planet-three?type=ring&baseColors=B6D3E0,9E7479,4D2821,c954aa&featureColors=35e2c9,274ec2,bf6617,7a4258&layerColors=05ad96,325af0,a7db74,512733&atmosphere=64c8e640,0078ff80,0000c880&schemeColor=white&pixels=300&ring=.25)
-- [lava planet](https://codabool.github.io/pixel-planet-three?type=lava&baseColors=B6D3E0,9E7479,4D2821,c954aa&featureColors=35e2c9,274ec2,bf6617,7a4258&schemeColor=white&pixels=300)
+- [baren](https://codabool.github.io/pixel-planet-three/?type=baren&pixels=800)
+- [ice](https://codabool.github.io/pixel-planet-three/?type=ice&pixels=800)
+- [gas](https://codabool.github.io/pixel-planet-three/?type=gas&pixels=800)
+- [ring](https://codabool.github.io/pixel-planet-three/?type=ring&pixels=800)
+- [asteroid](https://codabool.github.io/pixel-planet-three/?type=asteroid&pixels=800&size=4)
+- [star](https://codabool.github.io/pixel-planet-three/?type=star&pixels=800&schemeColor=yellow)
+- [blue star](https://codabool.github.io/pixel-planet-three/?type=star&pixels=800&schemeColor=blue&baseColors=4753fc)
+- [lava](https://codabool.github.io/pixel-planet-three/?type=lava&pixels=800)
+- [desert](https://codabool.github.io/pixel-planet-three/?type=desert&pixels=800)
+- [terrestrial, oceans](https://codabool.github.io/pixel-planet-three/?type=terrestrial&pixels=800&land=.8&cloudCover=.4)
+- [terrestrial, lands](https://codabool.github.io/pixel-planet-three/?type=terrestrial&pixels=800)
 
 ## Dev Notes
 ### TODO
