@@ -1,13 +1,13 @@
 
 # Pixel planet Generator
 A forked project to bring the generated pixel planet to new lengths.
-Mainly for the use with Stargazer.
+Mainly for the use with [Stargazer](https://stargazer.vercel.app).
 
 ## Parameters
 > currently these URL parameters are supported for planet generation ([code](https://github.com/CodaBool/pixel-planet-three/blob/main/index.js))
 
 ```sh
-pixels: 100 - 500
+pixels: 100 - 1000
 baseColors: 4 comma separated hexes
 featureColors: 4 comma separated hexes
 layerColors: 4 comma separated alpha hexes
@@ -40,7 +40,7 @@ rivers: 0 - 1
 lakes: 0 - 1
 ```
 
-You must specify at the minimum hexes or the planet will not be created
+If defining a color, you must all hexes or the planet will not be created
 
 ### Examples
 - [barren](https://codabool.github.io/pixel-planet-three/?type=barren&pixels=800)
